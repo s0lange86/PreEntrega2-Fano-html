@@ -1,0 +1,37 @@
+/* ESTILOS DE LA NAVBAR DE BOOTSTRAP*/
+.navbar{
+    background-color: $color_primario;
+
+    .imagen_logo_nav{
+        width: 10%;
+    }
+
+    .navbar-toggler{
+        background-color: $color_secundario;
+    }
+
+    .navbar-nav{
+        align-items: center;
+
+        .nav-item{
+            font-size: large;
+            padding-left: 0.5em;
+        }
+    }
+}
+
+// MEDIA QUERIES
+
+@media(min-width:768px){
+    .nav-item:hover{
+        @include efecto_hover(0.35s, 1.2);
+    }
+}
+
+@media(min-width:1024px){
+    .navbar{
+        .imagen_logo_nav{
+            width: 5%;
+        }
+    }
+}

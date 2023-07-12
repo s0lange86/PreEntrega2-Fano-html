@@ -1,0 +1,37 @@
+/* CONTACTO */
+
+.main_contacto_section{
+    height: 100vh;
+
+    .section_contacto{
+        margin: 1.5rem;
+
+        #floatingTextarea2{
+            height: 195px;
+        }
+        
+        .btn-dark{
+            margin-top: 1em;
+        }
+    }
+}
+
+// MEDIA QUERIES (CONTACTO):
+
+@media(min-width:500px){
+    .main_contacto_section{
+        padding: 0 3em;
+    }
+}
+
+@media(min-width:768px){
+    .main_contacto_section{
+        padding: 0 4em;
+
+        .section_contacto{
+            .btn-dark:hover{
+                @include efecto_hover(0.35s, 1.1)
+            }
+        }
+    }
+}

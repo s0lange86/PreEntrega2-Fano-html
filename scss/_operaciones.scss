@@ -1,0 +1,4 @@
+@mixin efecto_hover ($transition_segundos, $transform_escala){
+    transition: $transition_segundos;
+    transform: scale($transform_escala);
+}

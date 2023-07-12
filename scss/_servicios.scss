@@ -1,0 +1,50 @@
+// /* SERVICIOS */
+
+.main_servicios_section{
+    text-align: center;
+
+    .section_servicios{
+        display: grid;
+        justify-items: center;
+        margin: 2rem;
+    
+        .servicio{
+            box-shadow: $sombra2;
+
+            .imagen_servicio{
+                width: 100%;
+            }
+
+            .servicio_texto{
+                padding: 1em;
+            }
+        }
+    }
+}
+
+// MEDIA QUERIES:
+@media(min-width:768px){
+    .main_servicios_section{
+        .section_servicios{
+            .servicio{
+                width: 75%;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+
+@media(min-width:1024px){
+    .main_servicios_section{
+        .section_servicios{
+            .servicio{
+                display: flex;
+                align-items: center;
+        
+                .imagen_servicio{
+                    width: 50%;
+                }
+            }
+        }
+    }
+}

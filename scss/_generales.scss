@@ -1,0 +1,61 @@
+/* RESETEO */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* DISEÑO MOBILE FIRST (VISTA HASTA 499px) */
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    /* width: 100vw; */
+    height: 100vh;
+    background-color: $color_primario;
+    font-family: 'Poppins', sans-serif;
+
+    p{
+        margin-bottom:0;
+    }
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    color: $color_secundario;
+    padding: 1em;
+    font-size: small;
+    align-items: center;
+
+    .icon{
+        color: $color_secundario;
+        padding: 0 1.5px;
+        font-size: 1.2rem;
+    }
+}
+
+
+/* ESTILOS GENERALES DE LAS SECCIONES */
+.main_nosotros_section, .main_productos_section, .main_servicios_section, .main_contacto_section{
+    background-color: $color_secundario;
+}
+
+.fab::before{
+    color: $color_secundario;
+}
+
+
+// MEDIA QUERIES:
+@media(min-width:500px){
+    .footer{
+        font-size: large;
+    }
+}
+
+@media(min-width:768px){
+    .fab:hover{
+        @include efecto_hover(0.35s, 1.2);
+    }
+}
